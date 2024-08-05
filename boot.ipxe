@@ -1,0 +1,10 @@
+#!ipxe
+
+kernel https://github.com/tux-tech-tips/archlinux-http/releases/download/version-1/vmlinuz
+sleep1
+initrd https://github.com/tux-tech-tips/archlinux-http/releases/download/version-1/initrd.img
+sleep 1
+imgargs vmlinuz boot-live fetch=https://github.com/tux-tech-tips/archlinux-http/releases/download/version-1/archlinux.squashfs
+sleep 1
+echo "And away we go !"
+boot
